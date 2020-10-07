@@ -17,9 +17,12 @@ const Cocktail = ({ cocktail }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>All Cocktails</title>
+        <title>{cocktail.strDrink}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link href="/cocktails">
+        <a className={styles.backButton}>{"< All Cocktails"}</a>
+      </Link>
 
       <main className={styles.main}>
         <h1 className={styles.title}>{cocktail.strDrink}</h1>

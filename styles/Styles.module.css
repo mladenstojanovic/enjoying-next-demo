@@ -7,6 +7,13 @@
   align-items: center;
 }
 
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -36,7 +43,8 @@
 }
 
 .title a,
-.description a {
+.description a,
+.backButton {
   color: #0070f3;
   text-decoration: none;
 }
@@ -46,7 +54,10 @@
 .title a:active,
 .description a:hover,
 .description a:focus,
-.description a:active {
+.description a:active,
+.backButton:hover,
+.backButton:focus,
+.backButton:active {
   text-decoration: underline;
 }
 
